@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#233c2c">
+<title>Kamarudheen & Raheema — Wedding Invitation</title>
+<style>
+:root{--forest:#243d2d;--olive:#536846;--gold:#b99345;--cream:#f7f1e5;--ink:#2c2a25;--muted:#716b5e}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at top,#fffaf1 0,#f1e6d3 58%,#e8dcc5 100%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
+.wrap{width:min(100% - 28px,760px);margin:0 auto;padding:24px 0 48px}
+.hero{text-align:center;padding:28px 16px 20px}
+.kicker{font:600 11px/1.5 system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--olive)}
+.hero h1{font-size:clamp(34px,8vw,62px);font-weight:400;line-height:1.08;margin:16px 0 10px;color:var(--forest)}
+.hero h1 span{display:block;font-style:italic;color:var(--gold);font-size:.68em;margin:8px}
+.ornament{color:var(--gold);letter-spacing:.35em;font-size:19px}
+.hero p{font-size:16px;color:var(--muted);line-height:1.65;margin:14px auto 0;max-width:460px}
+.panel{background:rgba(255,252,246,.78);border:1px solid #d8c59e;border-radius:22px;box-shadow:0 14px 35px #6e58301a;padding:20px}
+.scratch-wrap{position:relative;overflow:hidden;border-radius:17px;min-height:540px;background:linear-gradient(135deg,#f4e6c9,#d9c08b);display:flex;align-items:stretch;justify-content:center}
+.invite{position:absolute;inset:0;padding:24px 18px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#fffaf0,#f1e4ca);border:4px double #c5a15a;color:var(--forest)}
+.invite-inner{width:100%;max-width:430px;margin:auto}
+.invite .arabic{font-size:clamp(20px,5.5vw,26px);line-height:1.7;margin:0 auto 14px;color:#9b793b;max-width:100%;overflow-wrap:anywhere}
+.invite .small{font:600 10px system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#7b704f}
+.invite h2{font-size:clamp(28px,7vw,42px);font-weight:400;line-height:1.12;margin:12px 0;color:#273e2d}
+.invite h2 em{font-size:.72em;color:#b28b46;font-style:normal}
+.invite .message{font-size:14px;line-height:1.55;margin:8px auto 12px;color:#655d4d}
+.photo{width:92px;height:92px;border-radius:50%;object-fit:cover;border:3px solid #c6a25d;margin:0 auto 12px;display:none}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.detail{border-top:1px solid #d7c39c;padding:10px 4px 0;font-size:14px}
+.detail strong{display:block;font:600 10px system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#82734f;margin-bottom:5px}
+.venue{font-size:13px;line-height:1.5;margin:0 auto;max-width:95%}
+.canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}
+.hidden{display:none!important}
+.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0 0}
+.btn{border:0;border-radius:999px;padding:13px 18px;background:var(--forest);color:white;font:600 13px system-ui,sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.btn.secondary{background:#e7d8b7;color:#463b25;border:1px solid #c9ab70}
+.controls{margin-top:18px;text-align:center;font:13px system-ui,sans-serif;color:var(--muted)}
+.controls input{max-width:100%;margin-top:10px}
+.note{font:12px/1.6 system-ui,sans-serif;color:#827b6d;text-align:center;margin:16px 6px 0}
+footer{text-align:center;color:#8b806c;font:12px system-ui,sans-serif;margin:25px 0 0}
+@media(max-width:430px){
+ .scratch-wrap{min-height:570px}
+ .invite{padding:18px 12px}
+ .invite-inner{max-width:100%}
+ .invite .arabic{margin-bottom:10px}
+ .invite .message{font-size:13px;margin:7px auto 10px}
+ .invite h2{margin:10px 0}
+ .details{gap:6px;margin:12px 0}
+ .detail{font-size:13px}
+ .venue{font-size:12px}
+ .panel{padding:12px}
+ .photo{width:82px;height:82px}
+}
+@media(max-width:360px){.scratch-wrap{min-height:600px}.invite{padding:15px 9px}.invite .small{letter-spacing:.16em}.invite h2{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="kicker">A celebration of love & togetherness</div>
+<h1>Kamarudheen <span>&amp;</span> Raheema</h1>
+<div class="ornament">✦ ❧ ✦</div>
+<p>We have a little surprise for you.<br>Scratch below to reveal our wedding invitation.</p>
+</header>
+<main class="panel">
+<div class="scratch-wrap" id="scratchWrap">
+<div class="invite" id="invite">
+<div class="invite-inner">
+<div class="arabic" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+<img class="photo" id="couplePhoto" alt="Couple photo">
+<div class="small">Together with our families</div>
+<p class="message">request the pleasure of your presence at our wedding ceremony</p>
+<h2>Kamarudheen <em>&amp;</em> Raheema</h2>
+<div class="ornament">❧</div>
+<div class="details">
+<div class="detail"><strong>Date</strong>13 November 2026</div>
+<div class="detail"><strong>Time</strong>9:00 AM</div>
+</div>
+<div class="venue"><strong>Kuruppinpadi Juma Masjid</strong><br>Near Bappu Musliyar Maqaam</div>
+<p class="message">Your presence and prayers will make our day more special.</p>
+</div>
+</div>
+<canvas class="canvas" id="scratchCanvas" aria-label="Scratch to reveal invitation"></canvas>
+</div>
+<div class="actions">
+<a class="btn" id="mapsBtn" href="https://www.google.com/maps/search/?api=1&amp;query=Kuruppinpadi+Juma+Masjid+Near+Bappu+Musliyar+Maqaam" target="_blank" rel="noopener">📍 View Location</a>
+<button class="btn secondary" id="shareBtn">↗ Share Invitation</button>
+<button class="btn secondary" id="resetBtn">↻ Reset Scratch</button>
+</div>
+<div class="controls">
+<label for="photoInput">Optional: preview your couple photo</label><br>
+<input type="file" id="photoInput" accept="image/*">
+<p class="note">Photo preview is for this browser only. To show a photo to everyone on your published website, add the image file to the website folder and follow the setup guide.</p>
+</div>
+</main>
+<footer>With love &amp; duas • Kamarudheen &amp; Raheema</footer>
+</div>
+<script>
+const canvas=document.getElementById('scratchCanvas'), ctx=canvas.getContext('2d');
+const wrap=document.getElementById('scratchWrap');
+let scratching=false,revealed=false;
+function resizeCanvas(){
+ const r=wrap.getBoundingClientRect(), dpr=Math.min(window.devicePixelRatio||1,2);
+ canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);
+ canvas.style.width=r.width+'px';canvas.style.height=r.height+'px';ctx.setTransform(dpr,0,0,dpr,0,0);
+ drawCover(r.width,r.height);
+}
+function drawCover(w,h){
+ ctx.globalCompositeOperation='source-over';
+ let g=ctx.createLinearGradient(0,0,w,h);g.addColorStop(0,'#d5b36c');g.addColorStop(.45,'#b58a42');g.addColorStop(1,'#dfc48c');
+ ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+ ctx.strokeStyle='#f7e9c6';ctx.lineWidth=2;ctx.strokeRect(13,13,w-26,h-26);
+ ctx.fillStyle='#fff7df';ctx.font='28px Georgia';ctx.textAlign='center';ctx.fillText('✦',w/2,52);
+ ctx.fillStyle='#fffdf4';ctx.font='italic 25px Georgia';ctx.fillText('A little surprise',w/2,h/2-24);
+ ctx.font='bold 12px system-ui';ctx.fillText('SCRATCH TO REVEAL',w/2,h/2+8);
+ ctx.font='23px Georgia';ctx.fillText('❧',w/2,h/2+44);
+ ctx.globalCompositeOperation='source-over';
+}
+function point(e){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+function scratch(e){if(!scratching||revealed)return;const p=point(e);ctx.globalCompositeOperation='destination-out';ctx.beginPath();ctx.arc(p.x,p.y,24,0,Math.PI*2);ctx.fill();ctx.globalCompositeOperation='source-over';checkReveal();}
+function checkReveal(){
+ const pixels=ctx.getImageData(0,0,canvas.width,canvas.height).data;let clear=0;
+ for(let i=3;i<pixels.length;i+=16)if(pixels[i]<40)clear++;
+ if(clear/(pixels.length/4/4)>.43){revealed=true;canvas.classList.add('hidden')}
+}
+canvas.addEventListener('pointerdown',e=>{scratching=true;canvas.setPointerCapture(e.pointerId);scratch(e)});
+canvas.addEventListener('pointermove',scratch);
+canvas.addEventListener('pointerup',()=>scratching=false);
+canvas.addEventListener('pointercancel',()=>scratching=false);
+document.getElementById('resetBtn').addEventListener('click',()=>{revealed=false;canvas.classList.remove('hidden');resizeCanvas()});
+window.addEventListener('resize',resizeCanvas);
+resizeCanvas();
+document.getElementById('photoInput').addEventListener('change',e=>{
+ const f=e.target.files?.[0];if(!f)return;
+ const img=document.getElementById('couplePhoto');img.src=URL.createObjectURL(f);img.style.display='block';
+});
+document.getElementById('shareBtn').addEventListener('click',async()=>{
+ const data={title:'Kamarudheen & Raheema Wedding Invitation',text:'You are invited to celebrate the wedding of Kamarudheen & Raheema. 13 November 2026, 9:00 AM. Kuruppinpadi Juma Masjid.',url:location.href};
+ try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(location.href);alert('Invitation link copied! Share it on WhatsApp.')}}catch(err){}
+});
+</script>
+</body>
+</html>
